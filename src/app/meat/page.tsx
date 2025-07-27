@@ -1,4 +1,4 @@
-'use client';
+'use client'
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -57,12 +57,9 @@ export default function MeatPage() {
               {i18n.language === 'en' ? (
                 // English version
                 <>
-                  Power Your Body with Every Bite of{' '}
+                  Power your body with every bite of{' '}
                   <span className="bg-gradient-to-r from-amber-600 via-orange-600 to-red-600 bg-clip-text text-transparent">
-                    FerriFresh
-                  </span>{' '}
-                  <span className="text-red-600">
-                    Quail
+                    fresh quail meat
                   </span>
                 </>
               ) : (
@@ -70,7 +67,7 @@ export default function MeatPage() {
                 <>
                   قوّي جسمك مع كل لقمة من{' '}
                   <span className="bg-gradient-to-r from-amber-600 via-orange-600 to-red-600 bg-clip-text text-transparent">
-                    فرّي فريش
+                    لحم الفرّي الطازج
                   </span>
                 </>
               )}

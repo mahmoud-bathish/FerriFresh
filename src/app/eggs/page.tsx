@@ -57,9 +57,13 @@ export default function EggsPage() {
               {i18n.language === 'en' ? (
                 // English version
                 <>
-                  Start Your Day with Nature's Perfect{' '}
+                  Start your day with the perfect natural{' '}
                   <span className="bg-gradient-to-r from-amber-600 via-orange-600 to-red-600 bg-clip-text text-transparent">
-                    Protein
+                    protein
+                  </span>{' '}
+                  from{' '}
+                  <span className="bg-gradient-to-r from-amber-600 via-orange-600 to-red-600 bg-clip-text text-transparent">
+                    quail eggs
                   </span>
                 </>
               ) : (
@@ -67,9 +71,12 @@ export default function EggsPage() {
                 <>
                   ابدأ يومك مع{' '}
                   <span className="bg-gradient-to-r from-amber-600 via-orange-600 to-red-600 bg-clip-text text-transparent">
-                    البروتين
+                    البروتين الطبيعي المثالي
                   </span>{' '}
-                  المثالي للطبيعة
+                  من{' '}
+                  <span className="bg-gradient-to-r from-amber-600 via-orange-600 to-red-600 bg-clip-text text-transparent">
+                    بيض الفرّي
+                  </span>
                 </>
               )}
             </h1>
