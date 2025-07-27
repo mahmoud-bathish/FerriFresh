@@ -1,8 +1,10 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import FloatingContactButton from '@/components/FloatingContactButton';
 
 export default function EggsPage() {
   const [isVisible, setIsVisible] = useState(false);
@@ -14,7 +16,7 @@ export default function EggsPage() {
   const benefits = [
     {
       icon: "🥚",
-      title: "Farm Fresh Daily",
+      title: "Fresh Daily",
       description: "Collected fresh every morning from our free-range hens for maximum freshness and quality."
     },
     {
@@ -53,7 +55,7 @@ export default function EggsPage() {
               <span className="bg-gradient-to-r from-yellow-600 via-orange-600 to-amber-600 bg-clip-text text-transparent">Protein</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto">
-              Discover the incredible taste and nutrition of our farm-fresh, free-range eggs
+              Discover the incredible taste and nutrition of our fresh, free-range eggs
             </p>
             <div className="w-24 h-1 bg-gradient-to-r from-yellow-500 to-amber-600 mx-auto rounded-full"></div>
           </div>
@@ -100,14 +102,26 @@ export default function EggsPage() {
               <p className="text-2xl md:text-3xl font-bold text-white mb-4">
                 Choose FerriFresh Eggs.
               </p>
-              <p className="text-yellow-100 text-lg">
+              <p className="text-yellow-100 text-lg mb-6">
                 Your morning deserves the perfect start with our premium eggs.
               </p>
+              
+              {/* Contact Us Button */}
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-white/20 hover:bg-white/30 text-white font-semibold rounded-full transition-all duration-300 hover:scale-105 border border-white/30 hover:border-white/50"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                </svg>
+                Contact Us
+              </Link>
             </div>
           </div>
         </section>
         <Footer />
       </div>
+      <FloatingContactButton />
     </>
   );
 } 

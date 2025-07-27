@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import FloatingContactButton from '@/components/FloatingContactButton';
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(false);
@@ -28,7 +29,7 @@ export default function Home() {
                 </span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-600 font-medium">
-                Premium Farm Products
+                Premium Quail Products
               </p>
             </div>
 
@@ -41,8 +42,7 @@ export default function Home() {
             </h2>
             
             <p className="text-lg md:text-xl text-gray-700 mb-12 max-w-2xl mx-auto">
-              From farm-fresh eggs to premium meat, experience the difference that natural, 
-              hormone-free farming makes in every bite.
+            From fresh eggs to premium meat, experience the difference that natural, hormone-free goodness brings to every bite.
             </p>
 
             {/* Navigation Buttons */}
@@ -98,6 +98,7 @@ export default function Home() {
         </div>
         <Footer />
       </div>
+      <FloatingContactButton />
     </>
   );
 }

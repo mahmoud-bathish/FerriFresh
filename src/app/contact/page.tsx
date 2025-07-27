@@ -123,10 +123,10 @@ export default function ContactPage() {
               Don't wait - call us today to place your order or ask any questions.
             </p>
             <div className="bg-gradient-to-r from-amber-500/20 to-orange-500/20 backdrop-blur-sm rounded-2xl p-8 border border-amber-400/30">
-              <p className="text-2xl md:text-3xl font-bold text-white mb-4">
-                Call Now: +961 70 176 113
+              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white mb-4 break-words">
+                Call Now: <span className="whitespace-nowrap">+961 70 176 113</span>
               </p>
-              <p className="text-amber-100 text-lg">
+              <p className="text-amber-100 text-base md:text-lg">
                 Our team is ready to help you discover the difference that premium quality makes.
               </p>
             </div>
