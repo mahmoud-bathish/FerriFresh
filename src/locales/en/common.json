@@ -1,0 +1,126 @@
+{
+    "nav": {
+        "home": "Home",
+        "meat": "Meat",
+        "eggs": "Eggs",
+        "contact": "Contact"
+    },
+    "home": {
+        "brand": "FerriFresh",
+        "tagline": "Premium Quail Products",
+        "headline": "Discover Nature's Finest Quality",
+        "description": "From fresh eggs to premium meat, experience the difference that natural, hormone-free goodness brings to every bite.",
+        "meatButton": "🥩 Premium Meat",
+        "eggsButton": "🥚 Fresh Eggs",
+        "trustIndicators": {
+            "natural": "100% Natural",
+            "hormoneFree": "Hormone-Free",
+            "qualityGuaranteed": "Quality Guaranteed"
+        }
+    },
+    "meat": {
+        "title": "Power Your Body with Every Bite of FerriFresh Quail",
+        "subtitle": "Discover the exceptional taste and nutrition of premium quail meat - nature's most nutritious protein source",
+        "benefits": [
+            {
+                "title": "Lean Protein Powerhouse",
+                "description": "Quail meat contains 22% protein with only 3% fat, making it an excellent lean protein source for muscle building and weight management."
+            },
+            {
+                "title": "Heart-Healthy Choice",
+                "description": "Rich in omega-3 fatty acids and low in cholesterol, quail meat supports cardiovascular health and reduces heart disease risk."
+            },
+            {
+                "title": "Brain & Memory Boost",
+                "description": "High in B vitamins, especially B12 and B6, plus choline that enhances memory, focus, and cognitive function."
+            },
+            {
+                "title": "Hormone-Free Meat",
+                "description": "Our quail are raised naturally without artificial hormones or antibiotics, ensuring pure, clean meat for your family."
+            },
+            {
+                "title": "Rich in Minerals",
+                "description": "Packed with iron, zinc, selenium, and phosphorus - essential minerals for immunity, energy, and overall vitality."
+            }
+        ],
+        "cta": {
+            "title": "You're already holding the best.",
+            "subtitle": "Choose FerriFresh quail for premium quality and exceptional nutrition you can trust.",
+            "mainText": "Choose FerriFresh Quail.",
+            "description": "Your body deserves the superior nutrition that only premium quail meat provides.",
+            "contactButton": "Contact Us"
+        }
+    },
+    "eggs": {
+        "title": "Start Your Day with Nature's Perfect Protein",
+        "subtitle": "Taste the difference in every bite — pure, wholesome quail eggs.",
+        "benefits": [
+            {
+                "title": "Fresh Daily",
+                "description": "Collected fresh every morning to ensure maximum freshness and quality."
+            },
+            {
+                "title": "Natural & Nutritious",
+                "description": "Our Quails are fed a clean, natural diet — producing healthier, tastier eggs you can trust."
+            },
+            {
+                "title": "Complete Protein Source",
+                "description": "All 9 essential amino acids in perfect balance for muscle building and recovery."
+            },
+            {
+                "title": "Brain Health Boost",
+                "description": "Rich in choline and omega-3s that support memory, focus, and cognitive function."
+            },
+            {
+                "title": "Quality Guaranteed",
+                "description": "Rigorous quality control ensures every egg meets our premium standards."
+            }
+        ],
+        "cta": {
+            "title": "Nature's most complete food.",
+            "subtitle": "Choose FerriFresh eggs for breakfast that fuels your day with pure nutrition.",
+            "mainText": "Choose FerriFresh Eggs.",
+            "description": "Your morning deserves the perfect start with our premium eggs.",
+            "contactButton": "Contact Us"
+        }
+    },
+    "contact": {
+        "title": "Get in Touch",
+        "subtitle": "Ready to experience the difference? Contact us for orders, questions, or to learn more about our premium products.",
+        "contactInfo": [
+            {
+                "title": "Call Us",
+                "value": "+961 70 176 113",
+                "description": "Tap to call us directly",
+                "buttonText": "Call Now"
+            },
+            {
+                "title": "WhatsApp",
+                "value": "+961 70 176 113",
+                "description": "Send us a message on WhatsApp",
+                "buttonText": "Open WhatsApp"
+            },
+            {
+                "title": "Business Hours",
+                "value": "8AM - 8PM",
+                "description": "7 days a week"
+            }
+        ],
+        "cta": {
+            "title": "Ready to experience FerriFresh quality?",
+            "subtitle": "Don't wait - call us today to place your order or ask any questions.",
+            "mainText": "Call Now: +961 70 176 113",
+            "description": "Our team is ready to help you discover the difference that premium quality makes."
+        }
+    },
+    "footer": {
+        "copyright": "© 2025 FerriFresh. All rights reserved.",
+        "developer": "Crafted with ❤️ by Mahmoud Bathich"
+    },
+    "floatingContact": {
+        "orderNow": "Order Now",
+        "callNow": "Call Now",
+        "orderViaWhatsApp": "Order via WhatsApp",
+        "callToOrder": "Call to Order"
+    }
+}

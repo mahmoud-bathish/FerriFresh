@@ -3,9 +3,12 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Navbar() {
   const pathname = usePathname();
+  const { t } = useTranslation('common');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const isActive = (path: string) => {
@@ -28,8 +31,8 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center" onClick={closeMenu}>
-            <span className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-amber-600 via-orange-600 to-red-600 bg-clip-text text-transparent">
-              FerriFresh
+            <span className="py-2 text-2xl md:text-3xl font-bold bg-gradient-to-r from-amber-600 via-orange-600 to-red-600 bg-clip-text text-transparent">
+              {t('home.brand')}
             </span>
           </Link>
 
@@ -43,7 +46,7 @@ export default function Navbar() {
                   : 'text-gray-700'
               }`}
             >
-              Home
+              {t('nav.home')}
             </Link>
             <Link 
               href="/meat"
@@ -53,7 +56,7 @@ export default function Navbar() {
                   : 'text-gray-700'
               }`}
             >
-              Meat
+              {t('nav.meat')}
             </Link>
             <Link 
               href="/eggs"
@@ -63,7 +66,7 @@ export default function Navbar() {
                   : 'text-gray-700'
               }`}
             >
-              Eggs
+              {t('nav.eggs')}
             </Link>
             <Link 
               href="/contact"
@@ -73,20 +76,26 @@ export default function Navbar() {
                   : 'text-gray-700'
               }`}
             >
-              Contact
+              {t('nav.contact')}
             </Link>
+            
+            {/* Language Switcher */}
+            <LanguageSwitcher />
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            onClick={toggleMenu}
-            className="md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1 focus:outline-none"
-            aria-label="Toggle menu"
-          >
-            <span className={`block w-6 h-0.5 bg-gray-700 transition-all duration-300 ${isMenuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
-            <span className={`block w-6 h-0.5 bg-gray-700 transition-all duration-300 ${isMenuOpen ? 'opacity-0' : ''}`}></span>
-            <span className={`block w-6 h-0.5 bg-gray-700 transition-all duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
-          </button>
+          <div className="md:hidden flex items-center gap-4">
+            <LanguageSwitcher />
+            <button
+              onClick={toggleMenu}
+              className="flex flex-col justify-center items-center w-8 h-8 space-y-1 focus:outline-none"
+              aria-label="Toggle menu"
+            >
+              <span className={`block w-6 h-0.5 bg-gray-700 transition-all duration-300 ${isMenuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
+              <span className={`block w-6 h-0.5 bg-gray-700 transition-all duration-300 ${isMenuOpen ? 'opacity-0' : ''}`}></span>
+              <span className={`block w-6 h-0.5 bg-gray-700 transition-all duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation Menu */}
@@ -103,7 +112,7 @@ export default function Navbar() {
                   : 'text-gray-700 pl-4'
               }`}
             >
-              Home
+              {t('nav.home')}
             </Link>
             <Link 
               href="/meat"
@@ -114,7 +123,7 @@ export default function Navbar() {
                   : 'text-gray-700 pl-4'
               }`}
             >
-              Meat
+              {t('nav.meat')}
             </Link>
             <Link 
               href="/eggs"
@@ -125,7 +134,7 @@ export default function Navbar() {
                   : 'text-gray-700 pl-4'
               }`}
             >
-              Eggs
+              {t('nav.eggs')}
             </Link>
             <Link 
               href="/contact"
@@ -136,7 +145,7 @@ export default function Navbar() {
                   : 'text-gray-700 pl-4'
               }`}
             >
-              Contact
+              {t('nav.contact')}
             </Link>
           </div>
         </div>

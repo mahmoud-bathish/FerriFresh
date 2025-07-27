@@ -5,9 +5,12 @@ import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FloatingContactButton from '@/components/FloatingContactButton';
+import { useTranslation } from 'react-i18next';
+import i18n from '@/lib/i18n';
 
 export default function MeatPage() {
   const [isVisible, setIsVisible] = useState(false);
+  const { t } = useTranslation('common');
 
   useEffect(() => {
     setIsVisible(true);
@@ -16,28 +19,28 @@ export default function MeatPage() {
   const benefits = [
     {
       icon: "💪",
-      title: "Lean Protein Powerhouse",
-      description: "Quail meat contains 22% protein with only 3% fat, making it an excellent lean protein source for muscle building and weight management."
+      title: t('meat.benefits.0.title'),
+      description: t('meat.benefits.0.description')
     },
     {
       icon: "❤️",
-      title: "Heart-Healthy Choice",
-      description: "Rich in omega-3 fatty acids and low in cholesterol, quail meat supports cardiovascular health and reduces heart disease risk."
+      title: t('meat.benefits.1.title'),
+      description: t('meat.benefits.1.description')
     },
     {
       icon: "🧠",
-      title: "Brain & Memory Boost",
-      description: "High in B vitamins, especially B12 and B6, plus choline that enhances memory, focus, and cognitive function."
+      title: t('meat.benefits.2.title'),
+      description: t('meat.benefits.2.description')
     },
     {
       icon: "🦃",
-      title: "Hormone-Free Meat",
-      description: "Our quail are raised naturally without artificial hormones or antibiotics, ensuring pure, clean meat for your family."
+      title: t('meat.benefits.3.title'),
+      description: t('meat.benefits.3.description')
     },
     {
       icon: "🔬",
-      title: "Rich in Minerals",
-      description: "Packed with iron, zinc, selenium, and phosphorus - essential minerals for immunity, energy, and overall vitality."
+      title: t('meat.benefits.4.title'),
+      description: t('meat.benefits.4.description')
     }
   ];
 
@@ -51,11 +54,29 @@ export default function MeatPage() {
         }`}>
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Power Your Body with Every Bite of{' '}
-              <span className="bg-gradient-to-r from-amber-600 via-orange-600 to-red-600 bg-clip-text text-transparent">FerriFresh Quail</span>
+              {i18n.language === 'en' ? (
+                // English version
+                <>
+                  Power Your Body with Every Bite of{' '}
+                  <span className="bg-gradient-to-r from-amber-600 via-orange-600 to-red-600 bg-clip-text text-transparent">
+                    FerriFresh
+                  </span>{' '}
+                  <span className="text-red-600">
+                    Quail
+                  </span>
+                </>
+              ) : (
+                // Arabic version
+                <>
+                  قوّي جسمك مع كل لقمة من{' '}
+                  <span className="bg-gradient-to-r from-amber-600 via-orange-600 to-red-600 bg-clip-text text-transparent">
+                    فرّي فريش
+                  </span>
+                </>
+              )}
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto">
-              Discover the exceptional taste and nutrition of premium quail meat - nature's most nutritious protein source
+              {t('meat.subtitle')}
             </p>
             <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-red-600 mx-auto rounded-full"></div>
           </div>
@@ -93,17 +114,17 @@ export default function MeatPage() {
         }`}>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              You're already holding the best.
+              {t('meat.cta.title')}
             </h2>
             <p className="text-xl text-amber-100 mb-8">
-              Choose FerriFresh quail for premium quality and exceptional nutrition you can trust.
+              {t('meat.cta.subtitle')}
             </p>
             <div className="bg-gradient-to-r from-amber-500/20 to-orange-500/20 backdrop-blur-sm rounded-2xl p-8 border border-amber-400/30">
               <p className="text-2xl md:text-3xl font-bold text-white mb-4">
-                Choose FerriFresh Quail.
+                {t('meat.cta.mainText')}
               </p>
               <p className="text-amber-100 text-lg mb-6">
-                Your body deserves the superior nutrition that only premium quail meat provides.
+                {t('meat.cta.description')}
               </p>
               
               {/* Contact Us Button */}
@@ -114,7 +135,7 @@ export default function MeatPage() {
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                 </svg>
-                Contact Us
+                {t('meat.cta.contactButton')}
               </Link>
             </div>
           </div>

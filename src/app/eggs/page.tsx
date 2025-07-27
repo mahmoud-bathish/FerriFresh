@@ -5,9 +5,12 @@ import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FloatingContactButton from '@/components/FloatingContactButton';
+import { useTranslation } from 'react-i18next';
+import i18n from '@/lib/i18n';
 
 export default function EggsPage() {
   const [isVisible, setIsVisible] = useState(false);
+  const { t } = useTranslation('common');
 
   useEffect(() => {
     setIsVisible(true);
@@ -16,28 +19,28 @@ export default function EggsPage() {
   const benefits = [
     {
       icon: "🥚",
-      title: "Fresh Daily",
-      description: "Collected fresh every morning from our free-range hens for maximum freshness and quality."
+      title: t('eggs.benefits.0.title'),
+      description: t('eggs.benefits.0.description')
     },
     {
       icon: "🌿",
-      title: "Free-Range & Natural",
-      description: "Hens roam freely in open pastures, eating natural feed for healthier, tastier eggs."
+      title: t('eggs.benefits.1.title'),
+      description: t('eggs.benefits.1.description')
     },
     {
       icon: "💪",
-      title: "Complete Protein Source",
-      description: "All 9 essential amino acids in perfect balance for muscle building and recovery."
+      title: t('eggs.benefits.2.title'),
+      description: t('eggs.benefits.2.description')
     },
     {
       icon: "🧠",
-      title: "Brain Health Boost",
-      description: "Rich in choline and omega-3s that support memory, focus, and cognitive function."
+      title: t('eggs.benefits.3.title'),
+      description: t('eggs.benefits.3.description')
     },
     {
       icon: "🔒",
-      title: "Quality Guaranteed",
-      description: "Rigorous quality control ensures every egg meets our premium standards."
+      title: t('eggs.benefits.4.title'),
+      description: t('eggs.benefits.4.description')
     }
   ];
 
@@ -51,11 +54,27 @@ export default function EggsPage() {
         }`}>
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Start Your Day with Nature's Perfect{' '}
-              <span className="bg-gradient-to-r from-yellow-600 via-orange-600 to-amber-600 bg-clip-text text-transparent">Protein</span>
+              {i18n.language === 'en' ? (
+                // English version
+                <>
+                  Start Your Day with Nature's Perfect{' '}
+                  <span className="bg-gradient-to-r from-amber-600 via-orange-600 to-red-600 bg-clip-text text-transparent">
+                    Protein
+                  </span>
+                </>
+              ) : (
+                // Arabic version
+                <>
+                  ابدأ يومك مع{' '}
+                  <span className="bg-gradient-to-r from-amber-600 via-orange-600 to-red-600 bg-clip-text text-transparent">
+                    البروتين
+                  </span>{' '}
+                  المثالي للطبيعة
+                </>
+              )}
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto">
-              Discover the incredible taste and nutrition of our fresh, free-range eggs
+              {t('eggs.subtitle')}
             </p>
             <div className="w-24 h-1 bg-gradient-to-r from-yellow-500 to-amber-600 mx-auto rounded-full"></div>
           </div>
@@ -93,17 +112,17 @@ export default function EggsPage() {
         }`}>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Nature's most complete food.
+              {t('eggs.cta.title')}
             </h2>
             <p className="text-xl text-yellow-100 mb-8">
-              Choose FerriFresh eggs for breakfast that fuels your day with pure nutrition.
+              {t('eggs.cta.subtitle')}
             </p>
             <div className="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 backdrop-blur-sm rounded-2xl p-8 border border-yellow-400/30">
               <p className="text-2xl md:text-3xl font-bold text-white mb-4">
-                Choose FerriFresh Eggs.
+                {t('eggs.cta.mainText')}
               </p>
               <p className="text-yellow-100 text-lg mb-6">
-                Your morning deserves the perfect start with our premium eggs.
+                {t('eggs.cta.description')}
               </p>
               
               {/* Contact Us Button */}
@@ -114,7 +133,7 @@ export default function EggsPage() {
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                 </svg>
-                Contact Us
+                {t('eggs.cta.contactButton')}
               </Link>
             </div>
           </div>
