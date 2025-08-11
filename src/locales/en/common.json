@@ -6,7 +6,7 @@
         "contact": "Contact"
     },
     "home": {
-        "brand": "FerriFresh",
+        "brand": "The Miracle Quail",
         "tagline": "Premium Quail Products",
         "headline": "Discover Nature's Finest Quality",
         "description": "From fresh eggs to premium meat, experience the difference that natural, hormone-free goodness brings to every bite.",
@@ -19,34 +19,54 @@
         }
     },
     "meat": {
-        "title": "Power Your Body with Every Bite of FerriFresh Quail",
+        "title": "Power Your Body with Every Bite of The Miracle Quail",
         "subtitle": "Discover the exceptional taste and nutrition of premium quail meat - nature's most nutritious protein source",
         "benefits": [
             {
-                "title": "Lean Protein Powerhouse",
-                "description": "Quail meat contains 22% protein with only 3% fat, making it an excellent lean protein source for muscle building and weight management."
+                "title": "Treats Anemia",
+                "description": "Rich in iron and B12, quail meat helps increase hemoglobin levels and treats iron deficiency anemia effectively."
             },
             {
-                "title": "Heart-Healthy Choice",
-                "description": "Rich in omega-3 fatty acids and low in cholesterol, quail meat supports cardiovascular health and reduces heart disease risk."
+                "title": "Strengthens Bones and Teeth",
+                "description": "High in calcium, phosphorus, and vitamin D, quail meat promotes strong bone development and dental health."
             },
             {
-                "title": "Brain & Memory Boost",
-                "description": "High in B vitamins, especially B12 and B6, plus choline that enhances memory, focus, and cognitive function."
+                "title": "Breaks Down Kidney Stones",
+                "description": "Contains natural compounds that help dissolve kidney stones and support urinary tract health."
             },
             {
-                "title": "Hormone-Free Meat",
-                "description": "Our quail are raised naturally without artificial hormones or antibiotics, ensuring pure, clean meat for your family."
+                "title": "Relieves Allergies",
+                "description": "Quail meat has anti-inflammatory properties that can help reduce allergic reactions and boost immune response."
             },
             {
-                "title": "Rich in Minerals",
-                "description": "Packed with iron, zinc, selenium, and phosphorus - essential minerals for immunity, energy, and overall vitality."
+                "title": "Protects the Eye",
+                "description": "Rich in vitamin A and antioxidants that support eye health and protect against age-related vision problems."
+            },
+            {
+                "title": "Suitable for Diet",
+                "description": "Low in fat and calories while high in protein, making it perfect for weight management and healthy eating plans."
+            },
+            {
+                "title": "Supports Strength and Fertility",
+                "description": "Contains essential nutrients that enhance muscle strength and support reproductive health for both men and women."
+            },
+            {
+                "title": "Strengthens Focus",
+                "description": "High in B vitamins and omega-3s that improve concentration, mental clarity, and cognitive performance."
+            },
+            {
+                "title": "Improves Activity",
+                "description": "Provides sustained energy and vitality through its rich nutrient profile, enhancing daily physical performance."
+            },
+            {
+                "title": "Promotes Brain Development in Children",
+                "description": "Essential nutrients support healthy brain growth, speech development, and cognitive function in growing children."
             }
         ],
         "cta": {
             "title": "You're already holding the best.",
-            "subtitle": "Choose FerriFresh quail for premium quality and exceptional nutrition you can trust.",
-            "mainText": "Choose FerriFresh Quail.",
+            "subtitle": "Choose The Miracle Quail for premium quality and exceptional nutrition you can trust.",
+            "mainText": "Choose The Miracle Quail.",
             "description": "Your body deserves the superior nutrition that only premium quail meat provides.",
             "contactButton": "Contact Us"
         }
@@ -56,30 +76,50 @@
         "subtitle": "Taste the difference in every bite — pure, wholesome quail eggs.",
         "benefits": [
             {
-                "title": "Fresh Daily",
-                "description": "Collected fresh every morning to ensure maximum freshness and quality."
+                "title": "Treats Anemia",
+                "description": "Rich in iron and B12, quail eggs help increase hemoglobin levels and treat iron deficiency anemia effectively."
             },
             {
-                "title": "Natural & Nutritious",
-                "description": "Our Quails are fed a clean, natural diet — producing healthier, tastier eggs you can trust."
+                "title": "Strengthens Bones and Teeth",
+                "description": "High in calcium, phosphorus, and vitamin D, quail eggs promote strong bone development and dental health."
             },
             {
-                "title": "Complete Protein Source",
-                "description": "All 9 essential amino acids in perfect balance for muscle building and recovery."
+                "title": "Breaks Down Kidney Stones",
+                "description": "Contains natural compounds that help dissolve kidney stones and support urinary tract health."
             },
             {
-                "title": "Brain Health Boost",
-                "description": "Rich in choline and omega-3s that support memory, focus, and cognitive function."
+                "title": "Relieves Allergies",
+                "description": "Quail eggs have anti-inflammatory properties that can help reduce allergic reactions and boost immune response."
             },
             {
-                "title": "Quality Guaranteed",
-                "description": "Rigorous quality control ensures every egg meets our premium standards."
+                "title": "Protects the Eye",
+                "description": "Rich in vitamin A and antioxidants that support eye health and protect against age-related vision problems."
+            },
+            {
+                "title": "Suitable for Diet",
+                "description": "Low in fat and calories while high in protein, making them perfect for weight management and healthy eating plans."
+            },
+            {
+                "title": "Supports Strength and Fertility",
+                "description": "Contains essential nutrients that enhance muscle strength and support reproductive health for both men and women."
+            },
+            {
+                "title": "Strengthens Focus",
+                "description": "High in B vitamins and omega-3s that improve concentration, mental clarity, and cognitive performance."
+            },
+            {
+                "title": "Improves Activity",
+                "description": "Provides sustained energy and vitality through their rich nutrient profile, enhancing daily physical performance."
+            },
+            {
+                "title": "Promotes Brain Development in Children",
+                "description": "Essential nutrients support healthy brain growth, speech development, and cognitive function in growing children."
             }
         ],
         "cta": {
             "title": "Nature's most complete food.",
-            "subtitle": "Choose FerriFresh eggs for breakfast that fuels your day with pure nutrition.",
-            "mainText": "Choose FerriFresh Eggs.",
+            "subtitle": "Choose The Miracle Quail eggs for breakfast that fuels your day with pure nutrition.",
+            "mainText": "Choose The Miracle Quail Eggs.",
             "description": "Your morning deserves the perfect start with our premium eggs.",
             "contactButton": "Contact Us"
         }
@@ -107,15 +147,15 @@
             }
         ],
         "cta": {
-            "title": "Ready to experience FerriFresh quality?",
+            "title": "Ready to experience The Miracle Quail quality?",
             "subtitle": "Don't wait - call us today to place your order or ask any questions.",
             "mainText": "Call Now: +961 70 176 113",
             "description": "Our team is ready to help you discover the difference that premium quality makes."
         }
     },
     "footer": {
-        "copyright": "© 2025 FerriFresh. All rights reserved.",
-        "developer": "Crafted with ❤️ by Mahmoud Bathich"
+        "copyright": "© 2025 The Miracle Quail. All rights reserved.",
+        "developer": "Crafted with ⚡ by Mahmoud Bathich"
     },
     "floatingContact": {
         "orderNow": "Order Now",

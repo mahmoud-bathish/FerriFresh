@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -16,38 +16,63 @@ export default function MeatPage() {
     setIsVisible(true);
   }, []);
 
-  const benefits = [
+  const benefits = useMemo(() => [
     {
-      icon: "💪",
+      icon: "🩸",
       title: t('meat.benefits.0.title'),
       description: t('meat.benefits.0.description')
     },
     {
-      icon: "❤️",
+      icon: "🦴",
       title: t('meat.benefits.1.title'),
       description: t('meat.benefits.1.description')
     },
     {
-      icon: "🧠",
+      icon: "🫀",
       title: t('meat.benefits.2.title'),
       description: t('meat.benefits.2.description')
     },
     {
-      icon: "🦃",
+      icon: "🤧",
       title: t('meat.benefits.3.title'),
       description: t('meat.benefits.3.description')
     },
     {
-      icon: "🔬",
+      icon: "👁️",
       title: t('meat.benefits.4.title'),
       description: t('meat.benefits.4.description')
+    },
+    {
+      icon: "⚖️",
+      title: t('meat.benefits.5.title'),
+      description: t('meat.benefits.5.description')
+    },
+    {
+      icon: "💪",
+      title: t('meat.benefits.6.title'),
+      description: t('meat.benefits.6.description')
+    },
+    {
+      icon: "🧠",
+      title: t('meat.benefits.7.title'),
+      description: t('meat.benefits.7.description')
+    },
+    {
+      icon: "⚡",
+      title: t('meat.benefits.8.title'),
+      description: t('meat.benefits.8.description')
+    },
+    {
+      icon: "👶",
+      title: t('meat.benefits.9.title'),
+      description: t('meat.benefits.9.description')
     }
-  ];
+  ], [t]);
 
   return (
     <>
       <Navbar />
-      <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-red-50 flex flex-col pt-20">
+      <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-red-50 flex flex-col pt-32">
         {/* Hero Section */}
         <section className={`px-6 py-16 text-center transition-all duration-1000 ease-out ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
